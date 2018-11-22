@@ -16,11 +16,11 @@ This repository contains a solution for Popular POI Challenge.
 ## Test configuration
 
 ### Hardware
-T2 Micro EC2 Instance (AWS)
-1 CPU
-1GB RAM
+- T2 Micro EC2 Instance (AWS)
+- 1 CPU
+- 1GB RAM
 
 ### Software
-Red Hat Enterprise Linux Server 7.6 (Maipo)
-Spark 2.4.0
-Scala 2.12.7
+- Red Hat Enterprise Linux Server 7.6 (Maipo)
+- Spark 2.4.0
+- Scala 2.12.7
