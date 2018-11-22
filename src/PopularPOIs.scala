@@ -1,3 +1,9 @@
+/**
+ * This module contains a solution for Popular POIs Challenge.
+ * The input are files with Uber rides data and POIs data
+ * The output is a files with POI names sorted down by popularity (number of visits), i.e. most visited POIs are in top.
+ */
+
 import spark._
 import org.apache.spark.SparkContext._
 import org.joda.time.DateTime
@@ -129,7 +135,7 @@ val uberRides = uberRidesRawDataWithoutHeader.map(s => stringToUberRide(s))
 /**
  * Reading the input file with points of interest (POI) data and converting it to a RDD of POI objects
  */
-val fnamePOI = "/home/ec2-user/HERE_Popular_POI_Challenge/input_data_sets/poi_test.csv"
+val fnamePOI = "/home/ec2-user/HERE_Popular_POI_Challenge/input_data_sets/poi.csv"
 val poiRawData = sc.textFile(fnamePOI, numSplits)
 
 // removing the header
